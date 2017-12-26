@@ -1,0 +1,38 @@
+﻿  <!--<th>Index</th>
+            <th>First?</th>
+            <th>Last?</th>
+            <th>Even?</th>
+            <th>Odd?</th>-->
+            <!--let i = index;let isFirst=first;let isLast=last;let isEven=even;let isOdd=odd-->
+
+
+ 
+
+            <!--<td>{{i}}</td>
+            <td>{{isFirst}}</td>
+            <td>{{isLast}}</td>
+            <td>{{isEven}}</td>
+            <td>{{isOdd}}</td>-->
+
+
+			
+
+<!--trackByEmpId(index: number, employee: any): number {
+       return employee.id;  ---employee list component
+
+    trackBy:trackByEmpId;  *ngFor
+   }-->
+
+   import { Component } from "@angular/core";
+
+@Component({
+    selector: 'my-app',
+    template: `     
+                Your text : <input type='text' [(ngModel)]='userText'/> 
+                <br/> <br/>
+                <simple [simpleInput]='userText'></simple>
+              `
+})
+export class AppComponent {    
+    userText: string = 'Ford'; 
+}
